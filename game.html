@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container is-flex is-align-items-center is-justify-content-center main-index-container">
+    <div class="game-game container is-max-desktop columns box pl-0" style="margin-top: -150px;">
+        <div class="game-options column is-4 px-5">
+            <h1 class="title is-2 has-text-centered">Настройки</h1>
+            <div class="tabs is-toggle">
+                <button class="is-size-7 is-flex-grow-1 tab-button active" onclick="openTab(event, 'time')"><a>На время</a></button>
+                <button class="is-size-7 is-flex-grow-1 tab-button" onclick="openTab(event, 'count')"><a>На количество</a></button>
+            </div>
+            <div class="select is-small custom-select">
+                <select id="themeSelect">
+                    <option value="formulaToName">Формула - название</option>
+                    <option value="nameToFormula">Название - формула</option>
+                    <option value="valency">Валентность</option>
+                    <option value="oxidation">Степень окисления</option>
+                </select>
+            </div>
+            <div class="game-option-btn">
+                <button id="startButton" class="button is-primary is-medium is-rounded">Старт</button>
+            </div>
+        </div>
+        <div class="game-block column is-8">
+            <div class="timer hidden" id="timerDiv">
+                <div id="time">01:00</div>
+            </div>
+            <div id="gameContent" class="hidden">
+                <p class="z" id="questionText"></p>
+                <div class="radios" id="optionsContainer"></div>
+                <div class="btn-2">
+                    <button id="answerButton" class="button is-primary is-medium is-rounded" disabled>Ответить</button>
+                </div>
+            </div>
+            <div id="resultDiv" class="hidden has-text-centered">
+                <h2 class="title is-3">Игра завершена!</h2>
+                <p class="subtitle is-4" id="resultText"></p>
+                <button id="restartButton" class="button is-primary is-medium is-rounded">Играть снова</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

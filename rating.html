@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container main-index-container">
+        <h1 class="title is-1 mt-6 has-text-centered">Лидеры</h1>
+        <div class="rating-settings">
+            <div class="tabs is-toggle is-align-items-center mb-0">
+                <button class="is-size-7 is-flex-grow-1 tab-button active" onclick="openTab(event, 'tab1')"><a>На
+                    время</a></button>
+                <button class="is-size-7 is-flex-grow-1 tab-button" onclick="openTab(event, 'tab2')"><a>На
+                    количество</a></button>
+            </div>
+
+            <div class="select is-small custom-select-rating ">
+                <select>
+                    <option>Формула - название</option>
+                    <option>Название - формула</option>
+                    <option>Валентность</option>
+                    <option>Степень окисления</option>
+                    <option>Типы химической связи</option>
+                    <option>Атомная масса</option>
+                    <option>Окислители и восстановители</option>
+                    <option>Физические и химические явления</option>
+                    <option>Типы химических реакций</option>
+                </select>
+            </div>
+        </div>
+
+
+        
+            <table class="table is-striped">
+                <tr>
+                    <th>Место</th>
+                    <th>Имя</th>
+                    <th>Результат</th>
+                    <th>Игр сыграно</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a>Анна Иванова</a></td>
+                    <td>100</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a>Анна Петрова</a></td>
+                    <td>92</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a>Сергей Смирнов</a></td>
+                    <td>89</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a>Ольга Кузнецова</a></td>
+                    <td>87</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a>Дмитрий Сидоров</a></td>
+                    <td>85</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a>Мария Васильева</a></td>
+                    <td>83</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a>Мария Васильева</a></td>
+                    <td>83</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a>Мария Васильева</a></td>
+                    <td>83</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a>Мария Васильева</a></td>
+                    <td>83</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a>Мария Васильева</a></td>
+                    <td>83</td>
+                    <td>12</td>
+                </tr>
+                <!-- <tr>
+                <td>---</td>
+            </tr> -->
+                <!-- <tr class="separator"><td colspan="3"></td></tr> -->
+                <tr>
+                    <td>1232</td>
+                    <td>Мария Васильева</td>
+                    <td>5</td>
+                    <td>12</td>
+                </tr>
+
+                <!-- <table class="table is-striped">
+                <tbody>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Место</th>
+                    </tr>
+                    <tr>
+                        <td>Петя Иванов</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Вася Петров</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Иван Иванов</td>
+                        <td>3</td>
+                    </tr> -->
+
+                <!-- <tr>
+                    <td>Info th cell</td>
+                    <td>Two</td>
+                </tr>
+                <tr>
+                    <td>Info row</td>
+                    <td>Two</td>
+                </tr>
+
+                <tr>
+                    <td>Success th cell</td>
+                    <td>Two</td>
+                </tr>
+                <tr>
+                    <td>Success row</td>
+                    <td>Two</td>
+                </tr>
+
+                <tr>
+                    <td>Warning th cell</td>
+                    <td>Two</td>
+                </tr>
+                <tr>
+                    <td>Warning row</td>
+                    <td>Two</td>
+                </tr> -->
+            </table>
+    </div>
+{% endblock %}

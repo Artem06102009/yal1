@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container is-flex is-align-items-center is-justify-content-center main-index-container">
+    <form action="" method="get" class="sign-up form-container">
+        <div class="container main-page-content-2">
+            <h1 class="title is-1 has-text-centered">Регистрация</h1>
+            <!-- <div class="field">
+                <label class="label">ФИО</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Иванов Иван Иванович">
+                </div>
+            </div> -->
+
+            <div class="field">
+                <label class="label">Почта</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email" value="">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <!-- <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </span> -->
+                </div>
+                <!-- <p class="help is-danger">Невалидная почта</p> -->
+            </div>
+
+            <div class="field">
+                <label class="label">Пароль</label>
+                <p class="control has-icons-left ">
+                    <input class="input" type="password" placeholder="Пароль">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field">
+                <label class="label">Повторите пароль</label>
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Пароль">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field is-grouped mt-5">
+                <div class="control mx-auto">
+                    <button class="button is-success">Зарегистрироваться</button>
+                </div>
+            </div>
+            <div class="is-flex is-justify-content-center"><p>Есть аккаунт? <a href="/signin">Войти</a></p></div>
+        </div>
+    </form>
+    </div>
+{% endblock %}
