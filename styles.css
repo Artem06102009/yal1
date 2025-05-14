@@ -226,12 +226,12 @@ th {
             display: none;
         }
         .correct {
-            background-color: #48c774 !important;
+            background-color: hsl(141, 71%, 48%) !important;
             color: white;
             border-color: transparent;
         }
         .incorrect {
-            background-color: #f14668 !important;
+            background-color: hsl(348, 100%, 61%) !important;
             color: white;
             border-color: transparent;
         }
@@ -248,3 +248,4 @@ th {
             text-align: center;
             padding: 8rem;
         }
+
