@@ -4,12 +4,9 @@
         <h1 class="title is-1 mt-6 has-text-centered">Лидеры</h1>
         <div class="rating-settings">
             <div class="tabs is-toggle is-align-items-center mb-0">
-                <button class="is-size-7 is-flex-grow-1 tab-button active" onclick="openTab(event, 'tab1')"><a>На
-                    время</a></button>
-                <button class="is-size-7 is-flex-grow-1 tab-button" onclick="openTab(event, 'tab2')"><a>На
-                    количество</a></button>
+                <button class="is-size-7 is-flex-grow-1 tab-button active" data-mode="time">На время</button>
+                <button class="is-size-7 is-flex-grow-1 tab-button" data-mode="count">На количество</button>
             </div>
-
             <div class="select is-small custom-select-rating ">
                 <select>
                     <option>Формула - название</option>
@@ -19,14 +16,10 @@
                     <option>Типы химической связи</option>
                     <option>Атомная масса</option>
                     <option>Окислители и восстановители</option>
-                    <option>Физические и химические явления</option>
-                    <option>Типы химических реакций</option>
                 </select>
             </div>
         </div>
 
-
-        
             <table class="table is-striped">
                 <tr>
                     <th>Место</th>
@@ -94,62 +87,13 @@
                     <td>83</td>
                     <td>12</td>
                 </tr>
-                <!-- <tr>
-                <td>---</td>
-            </tr> -->
-                <!-- <tr class="separator"><td colspan="3"></td></tr> -->
+
                 <tr>
                     <td>1232</td>
                     <td>Мария Васильева</td>
                     <td>5</td>
                     <td>12</td>
                 </tr>
-
-                <!-- <table class="table is-striped">
-                <tbody>
-                    <tr>
-                        <th>Имя</th>
-                        <th>Место</th>
-                    </tr>
-                    <tr>
-                        <td>Петя Иванов</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Вася Петров</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>Иван Иванов</td>
-                        <td>3</td>
-                    </tr> -->
-
-                <!-- <tr>
-                    <td>Info th cell</td>
-                    <td>Two</td>
-                </tr>
-                <tr>
-                    <td>Info row</td>
-                    <td>Two</td>
-                </tr>
-
-                <tr>
-                    <td>Success th cell</td>
-                    <td>Two</td>
-                </tr>
-                <tr>
-                    <td>Success row</td>
-                    <td>Two</td>
-                </tr>
-
-                <tr>
-                    <td>Warning th cell</td>
-                    <td>Two</td>
-                </tr>
-                <tr>
-                    <td>Warning row</td>
-                    <td>Two</td>
-                </tr> -->
             </table>
     </div>
 {% endblock %}

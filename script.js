@@ -655,8 +655,7 @@ const quizData = {
         answer: "SO₂",
         options: ["SO₂", "Na", "F₂", "KMnO₄"]
     },
-    // Продолжение аналогичным образом до 100 вопросов...
-    // Примеры продолжаются с различными комбинациями окислителей и восстановителей
+
     {
         question: "Что является восстановителем в реакции: 2FeCl₃ + H₂S → 2FeCl₂ + S + 2HCl?",
         answer: "H₂S",
@@ -840,9 +839,9 @@ const quizData = {
         resultsScreen.classList.remove('hidden');
 
         if (currentMode === 'time') {
-            resultText.textContent = `Вы ответили правильно на ${score} из ${currentQuestions.length} вопросов за 1 минуту!`;
+            resultText.textContent = `Вы ответили правильно на ${score} вопроса(-ов) за 1 минуту!`;
         } else {
-            resultText.textContent = `Вы ответили правильно на ${score} из ${totalQuestionsCount} вопросов!`;
+            resultText.textContent = `Вы ответили правильно на ${score} вопроса(-ов)!`;
         }
     }
 
